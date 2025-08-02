@@ -2,87 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fun River</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Fun River is an independent film & media production company telling stories that flow beyond borders.">
+  <title>Fun River — Where Stories Flow Beyond Borders</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 700px; margin: auto; padding: 20px; }
-    button { padding: 8px 16px; margin-bottom: 20px; cursor: pointer; }
-    h1 { color: #222; }
-    h3 { color: gray; }
-    ul { list-style-type: none; padding-left: 0; }
-    ul li { margin-bottom: 6px; }
-    footer { margin-top: 40px; font-style: italic; text-align: center; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.8rem;
+      color: #00bcd4;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
+    }
   </style>
-  <script>
-    function toggleLang() {
-      var enElements = document.querySelectorAll('.en');
-      var urElements = document.querySelectorAll('.ur');
-      if(enElements[0].style.display === 'none') {
-        enElements.forEach(el => el.style.display = 'block');
-        urElements.forEach(el => el.style.display = 'none');
-      } else {
-        enElements.forEach(el => el.style.display = 'none');
-        urElements.forEach(el => el.style.display = 'block');
-      }
-    }
-    window.onload = function() {
-      var enElements = document.querySelectorAll('.en');
-      var urElements = document.querySelectorAll('.ur');
-      enElements.forEach(el => el.style.display = 'block');
-      urElements.forEach(el => el.style.display = 'none');
-    }
-  </script>
 </head>
 <body>
-  <button onclick="toggleLang()">اردو / English</button>
-
-  <h1><span class="en">Welcome to Fun River</span><span class="ur">فن ریور میں خوش آمدید</span></h1>
-  <h3><span class="en">Where Stories Flow Beyond Borders</span><span class="ur">جہاں کہانیاں سرحدوں سے آگے بہتی ہیں</span></h3>
-
+  <img src="https://i.imgur.com/4M7IWwP.png" alt="Fun River Logo" class="logo" />
+  <h1>Welcome to Fun River</h1>
   <p>
-    <span class="en">Founded in 2018, Fun River is an independent film and media production company devoted to telling stories that transcend cultures and inspire hearts. With a passion for meaningful entertainment and a vision rooted in multiculturalism, we bring together artists, thinkers, and creators to produce content that reflects the richness of our shared human experience.</span>
-    <span class="ur">فن ریور ایک آزاد فلم اور میڈیا پروڈکشن کمپنی ہے جو 2018 میں قائم ہوئی۔ ہمارا مقصد ایسی کہانیاں تخلیق کرنا ہے جو ثقافتی سرحدوں سے ماورا ہوں اور دلوں کو چھو جائیں۔ ہم مختلف ثقافتوں سے تعلق رکھنے والے فنکاروں، تخلیق کاروں اور سوچنے والوں کو یکجا کرتے ہیں تاکہ انسانیت کے مشترکہ تجربات کو عکاسی دینے والی مواد تخلیق کیا جا سکے۔</span>
+    An independent film and media production company, where creativity meets culture.  
+    We tell stories that matter — across film, drama, digital, and beyond.
   </p>
-
-  <h2><span class="en">Our Mission</span><span class="ur">ہمارا مشن</span></h2>
-  <p>
-    <span class="en">To create compelling, culturally rich visual content that entertains, enlightens, and empowers audiences across the globe.</span>
-    <span class="ur">ایسا بصری مواد تخلیق کرنا جو ثقافتی طور پر بھرپور، تفریحی، بصیرت افروز اور بااختیار بنانے والا ہو۔</span>
-  </p>
-
-  <h2><span class="en">Our Vision</span><span class="ur">ہمارا وژن</span></h2>
-  <p>
-    <span class="en">To be a creative bridge between communities—celebrating diversity, encouraging dialogue, and expanding the impact of cinema and digital storytelling.</span>
-    <span class="ur">ہم مختلف کمیونٹیز کے درمیان ایک تخلیقی پل بننا چاہتے ہیں—تاکہ تنوع کا جشن منایا جا سکے، مکالمے کو فروغ دیا جا سکے اور سنیما اور ڈیجیٹل کہانیوں کے اثرات کو بڑھایا جا سکے۔</span>
-  </p>
-
-  <h2><span class="en">What We Do</span><span class="ur">ہم کیا کرتے ہیں</span></h2>
-  <ul>
-    <li>🎥 <span class="en">Film & Drama Production</span><span class="ur">فلم و ڈرامہ پروڈکشن</span></li>
-    <li>🖥️ <span class="en">Editing & Post-Production</span><span class="ur">ایڈیٹنگ اور پوسٹ پروڈکشن</span></li>
-    <li>📱 <span class="en">Social Media Marketing</span><span class="ur">سوشل میڈیا مارکیٹنگ</span></li>
-    <li>📸 <span class="en">Event Coverage</span><span class="ur">ایونٹ کوریج</span></li>
-    <li>📷 <span class="en">Photography & Visual Branding</span><span class="ur">فوٹوگرافی و بصری برانڈنگ</span></li>
-    <li>✍️ <span class="en">Creative Writing & Script Development</span><span class="ur">تخلیقی تحریر و سکرپٹ ڈیولپمنٹ</span></li>
-  </ul>
-
-  <h2><span class="en">Media Gallery</span><span class="ur">میڈیا گیلری</span></h2>
-  <p><span class="en">[YouTube Channel Link] [Instagram Handle]</span><span class="ur">[یوٹیوب چینل لنک] [انسٹاگرام ہینڈل]</span></p>
-
-  <h2><span class="en">Meet Our Team</span><span class="ur">ہماری ٹیم سے ملیے</span></h2>
-  <ul>
-    <li><strong>Attaullah Aali</strong> – Proprietor / مالک</li>
-    <li><strong>Shahid Maqbool</strong> – Managing Director / منیجنگ ڈائریکٹر</li>
-  </ul>
-
-  <h2><span class="en">Contact Us</span><span class="ur">ہم سے رابطہ کریں</span></h2>
-  <p>📞 +92 300 4313566</p>
-  <p>💬 WhatsApp: +92 321 9008088, +92 319 4873782</p>
-  <p>✉️ funrivercompanylimited@gmail.com</p>
-  <p>📍 Lahore, Pakistan</p>
-
   <footer>
-    کہانیوں کا دریا بہنے دو... <br /> Join us on this journey of stories and creativity.
+    &copy; 2018–2025 Fun River. All rights reserved.
   </footer>
 </body>
 </html>
